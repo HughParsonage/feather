@@ -1,6 +1,6 @@
 context("read")
 
-test_that("multiplication works", {
+test_that("example works", {
   iris_example <- feather_example("iris.feather")
   expect_identical(read_feather(iris_example), as_data_frame(iris))
   expect_identical(read_feather(iris_example, columns = 1:3),
